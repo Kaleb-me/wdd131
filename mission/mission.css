@@ -1,0 +1,50 @@
+body {
+    font-size: 27px;
+    margin: 0 auto;
+    margin-top: 100px;
+    width: 800px;
+}
+
+h1, h2 {
+    font-family: Garamond;
+    font-style: normal;
+    font-weight: 80;
+    text-align: center;
+}
+
+h1 {
+    font-size: 60px;
+    letter-spacing: .1em;
+
+}
+
+h2 {
+    font-size: 25px;
+    letter-spacing: .2em;
+    color: #508cc6;
+    margin-bottom: 10px;
+}
+
+hr {
+    width: 800px;
+}
+
+#statement {
+    margin-top: 75px;
+    line-height: 45px;
+}
+
+.italic {
+    font-style: italic;
+}
+
+li {
+    list-style: decimal;
+    margin: 25px 0 25px 0;
+}
+
+img {
+    max-width: 200px;
+    display: block;
+    margin: 75px auto;
+}
