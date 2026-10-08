@@ -5,7 +5,7 @@
 
 body {
     text-align: center;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+    font-family:'Lucida Sans', 'Lucida Sans Regular';
 }
 
 header, footer {
@@ -17,30 +17,48 @@ h1, h2 {
     padding: 20px;
 }
 
-
 nav a {
+    padding: 15px;
+    color: black;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    border-top: 1px solid grey;
+}
+
+.hide {
     display: none;
 }
 
-.bar {
+.bar1, .bar2, .bar3 {
     width: 30px;
     height: 4px;
     background-color: black;
     margin: 5px 0;
 }
 
+.change .bar1 {
+    transform: translate(0,9px) rotate(-45deg);
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+    transform: translate(0, -9px) rotate(45deg);
+}
+
 main {
     background-color: rgb(152, 165, 178);
 }
 
-#photos {
+.photos {
     max-width: 1200px;
     display: grid;
     justify-items: center;
     grid-template-columns: 1fr;
 }
 
-img {
+figure img {
   width: 300px;
   height: 300px;
   object-fit: cover;
@@ -49,8 +67,28 @@ img {
   margin: 10px;
 }
 
+dialog img {
+    width: 90%;
+    display: block;
+    margin: 20vh auto;
+}
+dialog {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.75);
+    border: none;
+    align-self: center;
+}
+.close-viewer {
+    position: absolute;
+    top: 10vh;
+    right: 2vh;
+    padding: 3px 6px;
+    font-size: 1.5em;
+}
+
 @media screen and (min-width: 700px) {
-    #photos {
+    .photos {
         grid-template-columns: 1fr 1fr;
     }
 }
@@ -62,9 +100,14 @@ img {
 
     nav a {
         display: inline;
+        border-top: none;
     }
-    #photos {
+    .photos {
         grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .hide {
+        display: block;
     }
 
 }
