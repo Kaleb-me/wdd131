@@ -5,12 +5,13 @@ body {
 
 h1 {
     text-align: center;
+    color: rgb(160, 33, 69);
 
 }
 
 nav {
-    border-top: 2px black solid;
-    border-bottom: 2px black solid;
+    border-top: 2px rgb(226, 121, 1) solid;
+    border-bottom: 2px rgb(226, 121, 1) solid;
 
 }
 
@@ -26,7 +27,16 @@ main {
 }
 
 .overview {
-    text-align: center;
+    text-align: left;
+}
+
+.overview h2 {
+    color: rgb(160, 33, 69);
+}
+
+.overview img {
+    display: block;
+    margin: auto;
 }
 
 footer {
@@ -43,9 +53,9 @@ footer {
 
     .overview {
         grid-column: 2/3;
-        border-left: 2px black solid;
-        margin-left: 30px;
-        padding: 10px
+        border-left: 2px rgb(226, 121, 1) solid;
+        margin-left: 40px;
+        padding-left: 40px;
     }
     
 }
