@@ -1,0 +1,144 @@
+body {
+    display: block;
+    margin: auto;
+    max-width: 700px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+
+.title {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-family: "Amatic SC";
+    font-size: 40px;
+    align-items: baseline;
+    margin-top: 5px;
+}
+
+.title img {
+    max-width: 100px;
+}
+
+h1 {
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    margin: 5px;
+}
+
+.search {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: black solid 2px;
+    border-radius: 5px;
+    flex: 1 1 400px;
+}
+
+#searchbar {
+    width: 100%;
+    /* max-width: 100%; */
+    height: 35px;
+    border: none;
+    font-size: 20px;
+}
+
+button {
+    border: none;
+    border-left: 1px black solid;
+    background-color: white;
+}
+
+button:hover {
+    background-color: rgb(230, 230, 230);
+
+}
+
+nav img {
+    max-width: 30px;
+    object-fit: cover;
+}
+
+.recipe-card {
+    display: flex;
+    flex-direction: column;
+    border: black solid 2px;
+    border-radius: 8px;
+    margin: 5px;
+    padding: 15px;
+}
+
+.recipe-card img {
+    max-width: 100%;
+}
+
+.review {
+    display: flex;
+    flex-direction: column;
+}
+
+.review h2 {
+    font-family: "Amatic SC";
+    color:#4eb8fa;
+    font-size: 30px;
+    margin: 20px 0 0 0; 
+}
+
+.description {
+    display: none;
+}
+
+.tag {
+    margin: 5px 0 0 0;
+    background-color: rgb(229, 229, 229);
+    max-width: fit-content;
+    padding: 5px;
+    border: 1px solid black;
+    border-radius: 4px;
+}
+
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 5px 5px 5px;
+    justify-content: space-between;
+}
+
+.social img {
+    width: 40px;
+}
+
+@media screen and (min-width: 500px) {
+    .recipe-card {
+        flex-direction: row;
+    }
+    .recipe-card img {
+        height: 45%;
+        max-width: 45%;
+        flex: 1 1 300px;
+    }
+
+    .review {
+        margin-left: 15px;
+    }
+
+    .description {
+    display: inline;
+    font-size: 12px;
+    }
+
+    footer {
+        flex-direction: row-reverse;
+        align-items: flex-start;
+    }
+
+    .social img {
+        margin: 0;
+    }
+}
