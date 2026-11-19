@@ -47,13 +47,13 @@ nav {
     font-size: 20px;
 }
 
-button {
+.searchButton {
     border: none;
     border-left: 1px black solid;
     background-color: white;
 }
 
-button:hover {
+.searchButton:hover {
     background-color: rgb(230, 230, 230);
 
 }
