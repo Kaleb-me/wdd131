@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<!-- saved from url=(0063)https://wddbyui.github.io/wdd131/prove/prove_wk11_template.html -->
+<html lang="en-us"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		
+		<title>Canvas To-Do Site Plan</title>
+		<link type="text/css" rel="stylesheet" href="./styles/app-plan.css">
+	</head>
+
+	<body>
+		<header>
+			<h1>Canvas To-Do: Project Plan</h1>
+			<h2>Kaleb Andelin</h2>
+			<h2>WDD 131</h2>
+			<!-- In the header above, add the name or your site, your name and class number. For example if you are in section 3 you would put WDD 131.03 -->
+		</header>
+		<main>
+			
+			<hr>
+			<h2>Overview</h2>
+			<h3>Purpose</h3>
+			<p>Provide a simplified, customizable to-do list of Canvas tasks.</p>
+			<!-- change this -->
+
+			<h3>Audience</h3>
+			<p>Students that prioritize organization in completing their assignments on Canvas.</p>
+			<!-- change this -->
+
+			<h3>Dynamic elements</h3>
+			<p>Reordering of canvas task cards using options from a drop-down menu, 
+                manual re-ordering of cards, and task completion. Optional integration with Canvas API token.</p>
+			<!-- change this -->
+
+			<hr>
+			<h2>Branding</h2>
+			<h3>Website Logo</h3>
+			<!-- Replace this with some sort of logo for your site.  A logo can be as simple as the name of your site in a nice font :) -->
+			<img id="logo" src="./images/todoForCanvas.png" alt="Logo image">
+			<hr>
+			<h2>Style Guide</h2>
+
+			<h3>Color Palette</h3>
+			<!--  The colors you choose for a website are one of the most important decisions you will make. Follow the instructions on the activity in iLearn then return and replace the color codes below with the hex color codes (the 6 digit numbers that show at the bottom of each color) for the colors you have chosen below.  You should have at least 2 colors but do not have to fill in all 4 if you do not need them.  -->
+
+			<!-- Copy and paste the URL to your finished palette below Make sure to paste it into both spots -->
+			Palette URL:
+			<a href="https://coolors.co/396e94-e7c24f-a43312-381d2a-aabd8c" target="_blank">https://coolors.co/396e94-e7c24f-a43312-381d2a-aabd8c</a>
+
+			<table class="colors">
+				<tbody>
+					<tr>
+						<th>Primary</th>
+						<th>Secondary</th>
+						<th>Accent 1</th>
+						<th>Accent 2</th>
+					</tr>
+					<!-- Replace the numbers in the boxes below with your hex color codes. Then switch to the site-plan.css file and change your colors there as well. -->
+					<tr>
+						<td class="primary">[#2F80ED]</td>
+						<td class="secondary">[#F05D5E]</td>
+						<td class="accent1">[#F7B32B]</td>
+						<td class="accent2"></td>
+					</tr>
+				</tbody>
+			</table>
+
+			
+
+			<h3>Pseudocode for your project</h3>
+
+			<p>
+				RENDERING ASSIGNMENT CARDS<br>
+				Create an array of sample assignment objects.<br>
+				Pull properties from the assignment objects into an html template.<br>
+				For each object in the array, render html for assignment cards.<br>
+				Add click event listener for api token input.<br>
+				If api token is entered, process it securely to pull assignments<br>
+				If date range is entered, filter returned api objects by date.<br>
+				replace sample array with assignment objects from api call.<br>
+				<br>
+				FILTERING ASSIGNMENTS<br>
+				if event listener click on up or down arrow button, change assignment card order value +-1.<br>
+				Sort objects by order value and render.<br>
+				if check mark button clicked on assignment card, display=none. (alternative: order value=null)<br>
+				Sort card objects by order value and render.<br>
+				If filter selected (due date, points, alphabetical) change order value.<br>
+				Sort card objects by order value and render.<br>
+			</p>
+
+			<h3>Wireframes</h3>
+			<p>
+				Create wireframes for your project page(s). One for each page and list them
+				here. 
+			</p>
+			<img id="wireframe" src="images/todoWireframe.png" alt="webpage wireframe">
+
+			<h3>Landing page</h3>
+			<p>
+				A warning box will be summoned when a user clicks into the input<br>
+				box inviting them to review my code for security concerns.<br>
+				<br>
+				"By entering your api token into the To-Do for Canvas, you agree to let<br>
+				To-Do for Canvas to act in your behalf and retrieve possibly sensitive<br>
+				Canvas account information. To-Do for Canvas and its developer(s)<br>
+				are not responsible for exposure of sensitive data or Canvas secrets.<br>
+				Your API token is not collected or stored by To-Do for Canvas,<br>
+				but could be visible to browser extensions. Proceed at your own risk."<br>
+			</p>
+
+		</main>
+	
+
+</body></html>
